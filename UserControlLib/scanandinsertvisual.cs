@@ -22,6 +22,7 @@ namespace UserControlLib
         
         public static void TraverseVisualTree2(Word.Application wordApp, string worddocpath, Visual visual, FrameworkElement container)
         {
+            
             for (int i = 0; i < VisualTreeHelper.GetChildrenCount(visual); i++)
             {
                 Visual childVisual = (Visual)VisualTreeHelper.GetChild(visual, i);
