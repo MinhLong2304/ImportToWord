@@ -17,6 +17,7 @@ namespace UserControlLib
             scanandinsertvisual.TraverseVisualTree2(wordApp, docfilepath, visual, container);
 
             addtextblock.AddManyTextBlocksToWordDocument(wordApp, docfilepath, container);
+            addtextbox.AddManyTextBoxesToWordDocument(wordApp, docfilepath, container);
 
             /*wordApp.Quit();*/
             DeleteExport.clearexport();

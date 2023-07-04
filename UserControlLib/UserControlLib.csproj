@@ -65,12 +65,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="addtextblock.cs" />
+    <Compile Include="addtextbox.cs" />
     <Compile Include="begin.cs" />
     <Compile Include="calculatemargin.cs" />
     <Compile Include="createworddoc.cs" />
     <Compile Include="DeleteExport.cs" />
     <Compile Include="exportmediaelement.cs" />
     <Compile Include="findtextblock.cs" />
+    <Compile Include="findtextbox.cs" />
     <Compile Include="insertimageelement.cs" />
     <Compile Include="LogicaTree.cs" />
     <Compile Include="old_addimg.cs" />

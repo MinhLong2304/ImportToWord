@@ -30,26 +30,31 @@ namespace UserControlLib
                 // Export the FrameworkElement
                 if (childFrameworkElement != null)
                 {
-                    if(!(childFrameworkElement is Button|| childFrameworkElement is RadioButton || childFrameworkElement is TextBlock || childFrameworkElement is ContentPresenter || childFrameworkElement is Label || childFrameworkElement is System.Windows.Documents.AdornerLayer||childFrameworkElement is ItemsPresenter|| childFrameworkElement is WrapPanel||childFrameworkElement is Popup||childFrameworkElement is Path|| childFrameworkElement is VirtualizingStackPanel))
-                    {
-                       
-                          /*  MessageBox.Show(childFrameworkElement?.GetType().ToString());*/
-                        
 
 
+
+
+                    /*MessageBox.Show(childFrameworkElement?.GetType().ToString());*/
+                    
+
+
+                    if (childFrameworkElement is Image||childFrameworkElement is System.Windows.Controls.Border||childFrameworkElement is Grid|| childFrameworkElement is System.Windows.Shapes.Shape)
+                        {
                         exportmediaelement.ExportMediaElement(wordApp, childFrameworkElement, worddocpath, container);
                     }
-                } 
-              
 
+                        
+                    
+                }
 
+/*
                 if (childFrameworkElement is TextBox || childFrameworkElement is Slider || childFrameworkElement is ComboBox || childFrameworkElement is DataGrid)
                 {
 
                     continue;
-                }
+                }*/
 
-                
+
 
                 if (childFrameworkElement is WebView2)
                 {
