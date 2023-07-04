@@ -72,6 +72,7 @@
     <Compile Include="exportmediaelement.cs" />
     <Compile Include="findtextblock.cs" />
     <Compile Include="insertimageelement.cs" />
+    <Compile Include="LogicaTree.cs" />
     <Compile Include="old_addimg.cs" />
     <Compile Include="Renderwebview.cs" />
     <Compile Include="setuppaper.cs" />

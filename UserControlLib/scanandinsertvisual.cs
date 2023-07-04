@@ -12,6 +12,8 @@ using Microsoft.Web.WebView2.Wpf;
 using System.Windows.Documents;
 using System.Threading;
 using System.Xml.Linq;
+using System.Windows.Controls.Primitives;
+using System.Windows.Shapes;
 
 namespace UserControlLib
 {
@@ -28,12 +30,11 @@ namespace UserControlLib
                 // Export the FrameworkElement
                 if (childFrameworkElement != null)
                 {
-                    if(!(childFrameworkElement is Button|| childFrameworkElement is RadioButton || childFrameworkElement is TextBlock || childFrameworkElement is ContentPresenter || childFrameworkElement is Label || childFrameworkElement is System.Windows.Documents.AdornerLayer))
+                    if(!(childFrameworkElement is Button|| childFrameworkElement is RadioButton || childFrameworkElement is TextBlock || childFrameworkElement is ContentPresenter || childFrameworkElement is Label || childFrameworkElement is System.Windows.Documents.AdornerLayer||childFrameworkElement is ItemsPresenter|| childFrameworkElement is WrapPanel||childFrameworkElement is Popup||childFrameworkElement is Path|| childFrameworkElement is VirtualizingStackPanel))
                     {
-                       /* if (childFrameworkElement.ActualHeight > 500 || childFrameworkElement.ActualWidth > 600)
-                        {// Show the type of the FrameworkElement
-                            MessageBox.Show(childFrameworkElement?.GetType().ToString());
-                        }*/
+                       
+                          /*  MessageBox.Show(childFrameworkElement?.GetType().ToString());*/
+                        
 
 
                         exportmediaelement.ExportMediaElement(wordApp, childFrameworkElement, worddocpath, container);
